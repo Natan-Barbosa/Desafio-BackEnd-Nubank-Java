@@ -1,0 +1,12 @@
+services:
+
+  db:
+    image: mariadb
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_DATABASE: nubank_db
+    ports:
+      - 3306:3306
+    expose:
+      - 3306:3306
