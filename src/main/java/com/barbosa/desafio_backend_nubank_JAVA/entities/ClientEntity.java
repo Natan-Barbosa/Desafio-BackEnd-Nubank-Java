@@ -1,5 +1,6 @@
 package com.barbosa.desafio_backend_nubank_JAVA.entities;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -25,6 +26,7 @@ public class ClientEntity {
     private String name;
 
     @OneToMany(mappedBy = "client", cascade = {CascadeType.PERSIST, CascadeType.REFRESH})
+    @JsonManagedReference
     private List<ContactEntity> contacts;
 
     @Column

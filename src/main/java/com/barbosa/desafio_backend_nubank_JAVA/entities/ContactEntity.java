@@ -1,5 +1,6 @@
 package com.barbosa.desafio_backend_nubank_JAVA.entities;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -26,6 +27,7 @@ public class ContactEntity {
 
     @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.REFRESH}, fetch = FetchType.LAZY)
     @JoinColumn(name = "client_id")
+    @JsonBackReference
     private ClientEntity client;
 
     @Column
