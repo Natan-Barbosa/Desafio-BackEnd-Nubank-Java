@@ -1,11 +1,17 @@
 package com.barbosa.desafio_backend_nubank_JAVA.entities;
 
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
 @Table(name = "contacts_tb")
 @Entity
+@Builder
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class ContactEntity {
 
     @Id
