@@ -18,10 +18,10 @@ public class ClientEntity {
     @Id
     private Long id;
 
-    @Column
+    @Column(unique = true,nullable = false)
     private String cnpj;
 
-    @Column
+    @Column(nullable = false)
     private String name;
 
     @OneToMany(mappedBy = "client", cascade = {CascadeType.PERSIST, CascadeType.REFRESH})
