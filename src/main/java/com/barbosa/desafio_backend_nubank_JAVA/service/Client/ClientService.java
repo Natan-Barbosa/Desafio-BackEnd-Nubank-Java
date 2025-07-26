@@ -6,10 +6,12 @@ import com.barbosa.desafio_backend_nubank_JAVA.exceptions.ClientNotFoundExceptio
 import com.barbosa.desafio_backend_nubank_JAVA.repository.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 @Service
+@Transactional
 public class ClientService {
 
     @Autowired
