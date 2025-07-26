@@ -2,13 +2,15 @@ package com.barbosa.desafio_backend_nubank_JAVA.service.Contacts;
 
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class ContactsCreateDto {
 
     @NotEmpty
