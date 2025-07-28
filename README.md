@@ -145,3 +145,8 @@ mvn test
 ## 📄 Licença
 
 Este projeto foi desenvolvido como parte de um desafio técnico.
+
+## 👨‍💻 Autor
+
+**Natan Barbosa**
+- GitHub: [https://github.com/Natan-Barbosa](https://github.com/Natan-Barbosa)
